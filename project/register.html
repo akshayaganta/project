@@ -1,0 +1,63 @@
+<html>
+<head>
+<link rel="stylesheet" href="form1.css" />
+<script src="form1.js"></script>
+</head>
+<body>
+<form action="register-form" method="post">
+<h1 class="register-header">Register</h1>
+<div class="register-block">
+<div class="left-block">
+<div class="input-block">
+<label>Name *</label>
+<input type="text" class="input-text" id="name" placeholder="Enter Name"/>
+</div>
+<div class="input-block">
+<label>Email *</label>
+<input type="text" class="input-text" id="email" placeholder="Enter email"/>
+</div>
+<div class="input-block">
+<label>Password *</label>
+<input type="password" class="input-text" id="password" placeholder="Enter password"/>
+<span class="info-message">Must be 8 characters and include one uppercase, one lowercase and one numeric</span>
+</div>
+<div class="input-block">
+<label>ConfirmPassword *</label>
+<input type="password" class="input-text" id="reenterpassword" placeholder="Enter confirmpassword"/>
+</div>
+</div>
+<div class="right-block">
+<div class="input-block">
+  <label for="cars">Branch *</label>
+  <select class="input-text input-select" name="branches" id="branches">
+    <option value="">Select branch</option>
+    <option value="CSE">CSE</option>
+    <option value="ECE">ECE</option>
+  <option value="EEE">EEE</option>
+    <option value="ME">ME</option>
+    <option value="CE">CE</option>
+  <option value="Chemical">Chemical</option>
+  <option value="IT">IT</option>
+    <option value="Electrical">Electrical</option>
+    <option value="Automobile">Automobile</option>
+  </select>
+</div>
+<div class="input-block">
+<label>Mobile *</label>
+<input type="number" class="input-text" id="mobile" placeholder="Enter mobile number"/>
+</div>
+<div class="input-block">
+<label>Address *</label>
+<textarea rows="4" class="input-text textarea-view" id="address" placeholder="Enter address"></textarea>
+</div>
+</div>
+</div>
+<div class="button-block">
+<button type="button" onclick="register()">Register Now</button>
+</div>
+ 
+<div id="errorMessage" class="error-block"></div>
+ 
+</form>
+</body>
+</html>

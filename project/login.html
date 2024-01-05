@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="form1.css">
+        <script src="form2.js"></script>
+    </head>
+    <body>
+        <form class="login-form" method="post">
+            <h1 class="login-header">Login</h1>
+            <div class="input-block">
+                <label>Email *</label>
+                <input type="text" class="input-text" id="email" placeholder="Enter Email Address">
+            </div>
+            <div class="input-block">
+                <label>Password *</label>
+                <input type="password" class="input-text" id="password" placeholder="Enter password">
+            </div>
+            <div class="button-block">
+                <button type="button" onclick="login()">Login</button>
+            </div>
+            <div id="errorMessage" class="error-block"></div>
+        </form>
+    </body>
+</html>
